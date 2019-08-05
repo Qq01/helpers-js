@@ -1,3 +1,8 @@
-export function urlFrom(moduleImport, path) {
-    return new URL(path, moduleImport.meta.url);
+/**
+ * 
+ * @param {{url:string}} importMeta 
+ * @param {string} path 
+ */
+export function urlFrom(importMeta, path) {
+    return new URL(path, importMeta.url);
 }
