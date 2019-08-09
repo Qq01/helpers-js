@@ -43,7 +43,6 @@ export function componentCreate(importMeta, constructor, {name, style, template}
         for (let elem of elements) {
             const refName = elem.dataset.cRef;
             comp[refName] = elem;
-            console.log('ref: ', refName, comp, comp[refName]);
         }
     };
     const data = {
